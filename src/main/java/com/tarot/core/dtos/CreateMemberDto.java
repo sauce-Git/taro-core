@@ -1,4 +1,4 @@
-package com.taro.core.dtos;
+package com.tarot.core.dtos;
 
 import lombok.Builder;
 import lombok.Data;

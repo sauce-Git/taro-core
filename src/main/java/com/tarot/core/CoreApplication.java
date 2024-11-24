@@ -1,4 +1,4 @@
-package com.taro.core;
+package com.tarot.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

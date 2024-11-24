@@ -1,9 +1,9 @@
-package com.taro.core.services;
+package com.tarot.core.services;
 
-import com.taro.core.dtos.CreateMemberDto;
-import com.taro.core.dtos.UpdateMemberDto;
-import com.taro.core.entities.Member;
-import com.taro.core.repositories.MemberRepository;
+import com.tarot.core.dtos.CreateMemberDto;
+import com.tarot.core.dtos.UpdateMemberDto;
+import com.tarot.core.entities.Member;
+import com.tarot.core.repositories.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

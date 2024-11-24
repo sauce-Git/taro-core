@@ -1,6 +1,6 @@
-package com.taro.core.repositories;
+package com.tarot.core.repositories;
 
-import com.taro.core.entities.Member;
+import com.tarot.core.entities.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

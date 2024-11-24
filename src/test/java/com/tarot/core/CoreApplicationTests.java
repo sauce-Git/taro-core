@@ -1,4 +1,4 @@
-package com.taro.core;
+package com.tarot.core;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

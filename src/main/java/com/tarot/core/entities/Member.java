@@ -1,4 +1,4 @@
-package com.taro.core.entities;
+package com.tarot.core.entities;
 
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
