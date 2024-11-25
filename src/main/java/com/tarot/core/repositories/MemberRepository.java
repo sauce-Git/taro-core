@@ -8,6 +8,7 @@ import java.util.UUID;
 
 @Repository
 public interface MemberRepository extends JpaRepository<Member, Long> {
+    Member findByEmail(String email);
     Member findByUuid(UUID uuid);
     void deleteByUuid(UUID uuid);
 }
