@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/tarot")
@@ -18,8 +17,8 @@ import java.util.Map;
 public class TarotController {
     private final TarotService tarotService;
 
-    @GetMapping("/models")
-    public ResponseEntity<TarotServiceResponseDto> modelList() {
+    @GetMapping("/execute")
+    public ResponseEntity<TarotServiceResponseDto> executeTarotReading() {
         Date birthday = new Date();
 
         List<String> models = tarotService.generateKeywords();
