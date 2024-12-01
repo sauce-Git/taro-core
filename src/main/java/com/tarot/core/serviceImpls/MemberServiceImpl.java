@@ -1,7 +1,7 @@
 package com.tarot.core.serviceImpls;
 
-import com.tarot.core.dto.member.CreateMemberDto;
-import com.tarot.core.dto.member.UpdateMemberDto;
+import com.tarot.core.dto.service.member.CreateMemberDto;
+import com.tarot.core.dto.service.member.UpdateMemberDto;
 import com.tarot.core.entities.Member;
 import com.tarot.core.repositories.MemberRepository;
 import com.tarot.core.services.MemberService;

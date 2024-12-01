@@ -1,4 +1,4 @@
-package com.tarot.core.dto.member;
+package com.tarot.core.dto.service.member;
 
 import jakarta.annotation.Nullable;
 import lombok.Builder;

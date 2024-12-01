@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package byuljogak.tarot.reader;
+option java_package = "com.byuljogak.tarot";
+
+import "google/protobuf/timestamp.proto";
+
+message CardContent {
+  optional string id = 1;
+  repeated string keywords = 2;
+  string advice = 3;
+  google.protobuf.Timestamp created_at = 4;
+}
+
+message Card {
+  optional string id = 1;
+  string title = 2;
+  string title_kr = 3;
+  google.protobuf.Timestamp created_at = 4;
+}

@@ -1,7 +1,6 @@
-package com.tarot.core.controllers;
+package com.tarot.core.controllers.v1;
 
-import com.tarot.core.dto.member.CreateMemberDto;
-import com.tarot.core.dto.member.LocalLoginDto;
+import com.tarot.core.dto.service.member.CreateMemberDto;
 import com.tarot.core.entities.Member;
 import com.tarot.core.services.MemberService;
 import jakarta.servlet.http.HttpServletRequest;
@@ -11,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1/member")
+@RequestMapping("/v1/member")
 @RequiredArgsConstructor
 public class MemberController {
 
