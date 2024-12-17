@@ -68,4 +68,6 @@ protobuf {
     }
 }
 
-tasks.named('test') {}
+tasks.named('test') {
+  useJUnitPlatform()
+}
