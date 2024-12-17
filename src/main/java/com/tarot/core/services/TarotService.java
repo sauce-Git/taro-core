@@ -1,11 +1,10 @@
 package com.tarot.core.services;
 
+import com.byuljogak.tarot.TarotServiceOuterClass.ReadTarotResponse;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 
 @Service
 public interface TarotService {
-    List<String> generateKeywords();
-    String generateDescription(List<String> keywords);
+    ReadTarotResponse generateTarotReading();
 }
