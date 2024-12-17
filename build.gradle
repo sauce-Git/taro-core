@@ -11,8 +11,8 @@ plugins {
     id 'com.google.protobuf' version '0.9.4'
 }
 
-group = 'com.byuljogak'
-version = '0.0.2'
+group = 'com.tarot'
+version = '0.0.3'
 
 java {
     toolchain {
