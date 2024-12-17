@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class ReadTarotResponseDataDTO {
+public class ReadTarotCardResponseDataDTO {
 
   private String title;
   private String titleKR;
