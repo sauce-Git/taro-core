@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 package byuljogak.tarot.reader;
+
 option java_package = "com.byuljogak.tarot";
 
 import "card.proto";
