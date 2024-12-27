@@ -1,0 +1,24 @@
+# # Environment
+# spring.config.import=optional:file:.env[.properties]
+#
+# # tarot-reading-service
+# grpc.client.tarot-reading-service.address=${TAROT_READING_SERVICE_ADDRESS}
+# grpc.client.tarot-reading-service.negotiation-type=PLAINTEXT
+# #grpc.client.tarot-reading-service.security.client-auth-enabled=true
+# #grpc.client.tarot-reading-service.security.certificate-chain=${TAROT_READING_SERVICE_CERT_CHAIN}
+# #grpc.client.tarot-reading-service.security.private-key=${TAROT_READING_SERVICE_PRIVATE_KEY}
+
+spring:
+  application:
+    name: tarot-core
+  config:
+    import: optional:file:.env[.properties]
+
+server:
+  port: ${PORT}
+  
+grpc:
+  client:
+    tarot-reading-service:
+      address: ${TAROT_READING_SERVICE_ADDRESS}
+      negotiation-type: PLAINTEXT

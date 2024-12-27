@@ -1,24 +1,25 @@
 syntax = "proto3";
 
 package byuljogak.tarot.reader;
-option java_package = "com.byuljogak.tarot";
 
 import "card.proto";
+
+option java_package = "com.byuljogak.tarot";
 
 service CardService {
   rpc CreateCard(CreateCardRequest) returns (CreateCardResponse) {}
   rpc CreateCardContent(CreateCardContentRequest)
-    returns (CreateCardContentResponse) {}
+      returns (CreateCardContentResponse) {}
 
   rpc ReadCard(ReadCardRequest) returns (ReadCardResponse) {}
 
   rpc UpdateCard(UpdateCardRequest) returns (UpdateCardResponse) {}
   rpc UpdateCardContent(UpdateCardContentRequest)
-    returns (UpdateCardContentResponse) {}
+      returns (UpdateCardContentResponse) {}
 
   rpc DeleteCard(DeleteCardRequest) returns (DeleteCardResponse) {}
   rpc DeleteCardContent(DeleteCardContentRequest)
-    returns (DeleteCardContentResponse) {}
+      returns (DeleteCardContentResponse) {}
 }
 
 message CreateCardRequest {
@@ -55,7 +56,8 @@ message UpdateCardContentRequest {
 message UpdateCardContentResponse { CardContent card_content = 1; }
 
 message DeleteCardRequest { string id = 1; }
-message DeleteCardResponse { }
+message DeleteCardResponse {}
 
 message DeleteCardContentRequest { string id = 1; }
-message DeleteCardContentResponse { }
+message DeleteCardContentResponse {}
+}

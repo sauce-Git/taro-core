@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.byuljogak.tarot.TarotServiceOuterClass.ReadTarotResponse;
 
 @RestController
-@RequestMapping("/v1/card")
+@RequestMapping("/v1/tarot")
 @RequiredArgsConstructor
 public class TarotCardController {
 
@@ -28,7 +28,8 @@ public class TarotCardController {
         .advice(readTarotResponse.getCardContents().getAdvice())
         .build();
 
-    final CustomResponseDTO<ReadTarotCardResponseDataDTO> response = CustomResponseDTO.<ReadTarotCardResponseDataDTO>builder()
+    final CustomResponseDTO<ReadTarotCardResponseDataDTO> response = CustomResponseDTO
+        .<ReadTarotCardResponseDataDTO>builder()
         .message("Tarot reading has been generated successfully.")
         .data(readTarotCardResponse)
         .build();
