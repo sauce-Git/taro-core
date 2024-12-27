@@ -60,4 +60,3 @@ message DeleteCardResponse {}
 
 message DeleteCardContentRequest { string id = 1; }
 message DeleteCardContentResponse {}
-}
